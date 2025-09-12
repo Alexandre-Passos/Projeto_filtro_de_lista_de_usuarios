@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    flex-grow: 1;
+    /* Preenche todo o espaço disponviel */
+    background-color: rgb(54, 92, 57);
+}
+
+.main-left-div{
+    height: 80%;
+    /* Ocupa toda a largura do seu elemento pai */
+    background-color: rgb(75, 138, 255);
+}
+
+.rigth-container{
+    width: 30%;
+    max-height: 100vh;
+    background-color: crimson;
+}
