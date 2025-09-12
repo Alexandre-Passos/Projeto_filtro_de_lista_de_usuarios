@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
+import {MatListModule} from '@angular/material/list';
 
 
 
 @NgModule({
   declarations: [],
 
-  imports: [],
+  imports: [MatListModule],
 
-  exports: []
+  exports: [MatListModule]
 
 })
 export class AngularMaterialModule { }
