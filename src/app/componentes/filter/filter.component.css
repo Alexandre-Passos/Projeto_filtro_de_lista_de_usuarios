@@ -4,14 +4,18 @@
 }
 
 .form {
-    width: 100%;
+    width: 80%;
     height: 100%;
-
+   
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 
+    background-color: white;
+    border-radius: 10px;
+
+ margin: 15px auto;
     .form-nome {}
 
     .form-data-cadastrada {}
@@ -22,7 +26,7 @@
 }
 
 @media screen and (max-width: 990px) {
-    .form{
+    .form {
         margin-top: 0.4rem;
         flex-direction: column;
     }
