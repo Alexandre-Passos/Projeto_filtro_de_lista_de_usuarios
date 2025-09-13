@@ -20,6 +20,7 @@
     height: 80%;
     /* Ocupa toda a largura do seu elemento pai */
     background-color: rgb(75, 138, 255);
+    overflow: auto
 }
 
 .rigth-container{

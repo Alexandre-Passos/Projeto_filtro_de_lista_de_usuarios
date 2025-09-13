@@ -3,15 +3,17 @@ import { AngularMaterialModule } from 'src/app/angular-material/angular-material
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { UsersListComponent } from './users-list/users-list.component';
 
 
 
 @NgModule({
   declarations: [
     UserDetailsComponent,
-    FilterComponent
+    FilterComponent,
+    UsersListComponent
   ],
   imports: [AngularMaterialModule, FormsModule],
-  exports: [UserDetailsComponent, FilterComponent]
+  exports: [UserDetailsComponent, FilterComponent, UsersListComponent]
 })
 export class ComponenteModule { }

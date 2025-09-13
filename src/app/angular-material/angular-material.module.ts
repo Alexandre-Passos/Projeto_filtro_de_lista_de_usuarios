@@ -10,17 +10,19 @@ import { MatInputModule } from '@angular/material/input';  //Material do Input
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
-import { MatSelectModule } from '@angular/material/select';
-import { CommonModule } from '@angular/common';
+import { MatSelectModule } from '@angular/material/select'; //Material do select
+import { CommonModule } from '@angular/common'; //Módulo comum do angular
 
-import {MatButtonModule} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button'; //Material do botão
+
+import {MatTableModule} from '@angular/material/table'; //Material tabela
 
 @NgModule({
   declarations: [],
 
-  imports: [MatListModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, CommonModule, MatButtonModule],
+  imports: [MatListModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, CommonModule, MatButtonModule, MatTableModule],
 
-  exports: [MatListModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, CommonModule, MatButtonModule]
+  exports: [MatListModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule, MatSelectModule, CommonModule, MatButtonModule, MatTableModule]
 
 })
 export class AngularMaterialModule { }
