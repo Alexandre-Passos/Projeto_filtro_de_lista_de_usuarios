@@ -4,7 +4,11 @@
     height: auto;
     padding: 20px;
 
-    table{
+    table {
         background-color: white;
+    }
+
+    .item-da-lista-de-usuarios {
+        cursor: pointer;
     }
 }
