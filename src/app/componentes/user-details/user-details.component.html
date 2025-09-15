@@ -7,43 +7,44 @@
 
         <mat-list-item>
             <span class="mat-h2">Nome: </span>
-            <span class="mat-h3">Alexandre</span>
+            <span class="mat-h3">{{usuario.nome}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Email: </span>
-            <span class="mat-h3">alexandre2025@uea.edu.br</span>
+            <span class="mat-h3">{{usuario.email}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Telefone: </span>
-            <span class="mat-h3">(92) 9999-9999</span>
+            <span class="mat-h3">{{usuario.telefone}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Endereço: </span>
-            <span class="mat-h3">Avenida Amazonas, 124, Manaus, AM</span>
+            <span class="mat-h3">{{usuario.endereco?.rua }} {{usuario.endereco?.numero}} - {{usuario.endereco?.cidade}}
+                - {{usuario.endereco?.estado}} - {{usuario.endereco?.pais}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Ativo: </span>
-            <span class="mat-h3">Sim</span>
+            <span class="mat-h3">{{usuario.status?.online}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Função: </span>
-            <span class="mat-h3">Desenvolvedor Fullstack</span>
+            <span class="mat-h3">{{usuario.funcao}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Data de cadastro: </span>
-            <span class="mat-h3">12/09/2025</span>
+            <span class="mat-h3">{{usuario.datacadastro}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>
