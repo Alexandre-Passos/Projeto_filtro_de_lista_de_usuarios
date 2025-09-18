@@ -10,7 +10,7 @@ import { UserList } from 'src/app/data/users.-list';
 export class UsersListComponent {
   userList: IUser[] = UserList;
 
-  displayedColumns: string[] = ["nome", "date", "status"];
+  displayedColumns: string[] = ["ID", "nome", "date", "status"];
 
   elementoSelecionado(usuario: IUser) {
     console.log(usuario);
