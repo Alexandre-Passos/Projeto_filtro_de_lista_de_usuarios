@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IUser } from './interfaces/user/user.interface';
 import { UserList } from './data/users.-list';
 
@@ -7,7 +7,23 @@ import { UserList } from './data/users.-list';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Projeto_filtro_de_lista_de_usuarios';
-  userSelected: IUser = UserList[5];
+
+  userList: IUser[] = [];
+  userSelected: IUser = {} as IUser;
+  listaUsuario: boolean = false;
+
+  ngOnInit() {
+    setTimeout(() => {
+      this.userList = UserList;
+    }, 5000)
+
+  };
+
+
+  receberUsuario(user: IUser) {
+    this.userSelected = user
+    this.listaUsuario = true
+  }
 }

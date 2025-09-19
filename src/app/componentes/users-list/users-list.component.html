@@ -18,7 +18,7 @@
         <!-- Coluna Data  -->
         <ng-container matColumnDef="date">
             <th mat-header-cell *matHeaderCellDef> Data de cadastro </th>
-            <td mat-cell *matCellDef="let element" class="item-da-lista-de-usuarios"> {{element.dataCadastro}} </td>
+            <td mat-cell *matCellDef="let element" class="item-da-lista-de-usuarios"> {{element.datacadastro | date:"dd/MM/YYYY"}} </td>
         </ng-container>
 
         <!-- Coluna de status -->

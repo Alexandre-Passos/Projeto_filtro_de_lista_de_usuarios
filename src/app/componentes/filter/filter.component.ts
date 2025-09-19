@@ -7,12 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
 
-  foods = [{
-
-    value: 'tst',
-    viewValue: 'TST'
-  }
-
-  ];
-
+ 
 }

@@ -7,44 +7,43 @@
 
         <mat-list-item>
             <span class="mat-h2">Nome: </span>
-            <span class="mat-h3">{{usuario.nome}}</span>
+            <span class="mat-h3">{{usuario.nome | tracoDash}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Email: </span>
-            <span class="mat-h3">{{usuario.email}}</span>
+            <span class="mat-h3">{{usuario.email | tracoDash}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Telefone: </span>
-            <span class="mat-h3">{{usuario.telefone | telefone}}</span>
+            <span class="mat-h3">{{usuario.telefone | telefone | tracoDash}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Endereço: </span>
-            <span class="mat-h3">{{usuario.endereco?.rua }} {{usuario.endereco?.numero}} - {{usuario.endereco?.cidade}}
-                - {{usuario.endereco?.estado}} - {{usuario.endereco?.pais}}</span>
+            <span class="mat-h3">{{usuario.endereco | endereco}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Ativo: </span>
-            <span class="mat-h3">{{usuario.status?.online}}</span>
+            <span class="mat-h3">{{usuario.status.verificado| status}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Função: </span>
-            <span class="mat-h3">{{usuario.funcao}}</span>
+            <span class="mat-h3">{{usuario.funcao | tracoDash}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Data de cadastro: </span>
-            <span class="mat-h3">{{usuario.datacadastro}}</span>
+            <span class="mat-h3">{{usuario.datacadastro | date:"dd/MM/YYYY" | tracoDash}}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>

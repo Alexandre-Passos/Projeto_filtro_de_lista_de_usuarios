@@ -6,11 +6,11 @@
         </div>
         <div class="main-left-div">
             <!-- Conteúdo da div esquerda (80% da altura) -->
-           <app-users-list></app-users-list>
+            <app-users-list [userList]="userList" (usuarioEmitter)="receberUsuario($event)"></app-users-list>
         </div>
     </div>
     <div class="rigth-container">
         <!-- Conteúdo da div direita -->
-        <app-user-details [usuario]="userSelected"></app-user-details>
+        <app-user-details [usuario]="userSelected" *ngIf="listaUsuario"></app-user-details>
     </div>
 </div>
